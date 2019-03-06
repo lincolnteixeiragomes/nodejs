@@ -4,10 +4,10 @@ const app = express();
 app.get("/", function(req, res){
   res.send("Seja muito bem vindo!");
 });
-app.get("sobre",function(req, res){
+app.get("/sobre",function(req, res){
   res.send("Minha pagina sobre!");
 });
-app.get("cadastro", function(req, res){
+app.get("/cadastro", function(req, res){
   res.send("Essa é minha pagina de cadastro!")
 });
 
