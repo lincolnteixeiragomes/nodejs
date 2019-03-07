@@ -4,9 +4,11 @@ const app = express();
 app.get("/", function(req, res){
   res.send("Seja muito bem vindo!");
 });
+
 app.get("/sobre",function(req, res){
   res.send("Minha pagina sobre!");
 });
+
 app.get("/cadastro/:nome/:cpf", function(req, res){
   res.send("Seu nome é: " + req.params.nome + "<br>" + "Seu CPF é: " + req.params.cpf);
 });
