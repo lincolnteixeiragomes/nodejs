@@ -7,8 +7,8 @@ app.get("/", function(req, res){
 app.get("/sobre",function(req, res){
   res.send("Minha pagina sobre!");
 });
-app.get("/cadastro", function(req, res){
-  res.send("Essa é minha pagina de cadastro!")
+app.get("/cadastro/:nome/:cpf", function(req, res){
+  res.send("Seu nome é: " + req.params.nome + "<br>" + "Seu CPF é: " + req.params.cpf);
 });
 
 app.listen(8081, function() {
