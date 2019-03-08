@@ -13,6 +13,10 @@ app.get("/cadastro/:nome/:cpf", function(req, res){
   res.send("Seu nome é: " + req.params.nome + "<br>" + "Seu CPF é: " + req.params.cpf);
 });
 
+app.get("/cadastro", function(req, res){
+  res.sendFile(__dirname + "/html/cadastro.html");
+});
+
 app.listen(8081, function() {
   console.log("Servidor rodando no endereço http://192.168.0.16:8081");
 });
