@@ -2,7 +2,10 @@ const express = require("express");
 const app = express();
 
 app.get("/:data", function(req, res){
-  res.send(" Data enviada: " + req.params.data );
+
+  var arrayData = stringToSplit.split(;);
+
+  res.send(" Param 1: " + arrayData[0] +  "<br>" + " Param 2: " + arrayData[1]);
 });
 
 app.listen(6969, function() {
