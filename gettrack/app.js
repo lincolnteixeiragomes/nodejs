@@ -3,7 +3,7 @@ const app = express();
 
 app.get("/:data", function(req, res){
 
-  var arrayData = stringToSplit.split(;);
+  var arrayData = data.split(;);
 
   res.send(" Param 1: " + arrayData[0] +  "<br>" + " Param 2: " + arrayData[1]);
 });
