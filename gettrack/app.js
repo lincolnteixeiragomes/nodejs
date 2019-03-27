@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 app.get("/:data", function(req, res){
-  res.send("Data enviada: " + req.params.data );
+  res.send(" Data enviada: " + req.params.data );
 });
 
 app.listen(6969, function() {
