@@ -31,7 +31,7 @@ app.get("/:data", function(req, res){
 	var input = io.substring(1,4);
 	var output= io.substring(4,6);
 
-    res.send(	
+    res.send(
 		"Param 1 - hdr: " + hdr + "<br>" +
 		"Param 2 - dev_id: " + dev_id + "<br>" +
 		"Param 3 - sw_ver: " + sw_ver + "<br>" +
@@ -54,7 +54,7 @@ app.get("/:data", function(req, res){
 		"Param20 - : msg_type: " + msg_type  + "<br>" +
 		"Param21 - : ignition: " + ignition  + "<br>" +
 		"Param22 - : input: " + input + "<br>" +
-		"Param23 - : output: " + output  + "<br>" 
+		"Param23 - : output: " + output  + "<br>"
     );
 
   }else{
@@ -64,5 +64,5 @@ app.get("/:data", function(req, res){
 });
 
 app.listen(6969, function() {
-  console.log("Servidor rodando no endereço http://192.168.1.69:6969");
+  console.log("Servidor rodando no endereço http://192.168.0.16:6969");
 });
