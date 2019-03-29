@@ -33,11 +33,12 @@ app.get("/:data", function(req, res){
 	var output = io.substring(4,6);
   var date_time = date.concat(" " + time);
 
-    // Posicao.create({
-    //
-    //   id_rastreador: dev_id,
-    //   data_hora:
-    // })
+    Posicao.create({
+
+      id_rastreador: dev_id,
+      data_hora: date_time
+    })
+
     res.send(
 		"Param 1 - hdr: " + hdr + "<br>" +
 		"Param 2 - dev_id: " + dev_id + "<br>" +
