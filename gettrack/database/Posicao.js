@@ -1,6 +1,6 @@
 const db = require('./db')
 
-const Posicao = db.sequelize.define('posicao', {
+const Posicao = db.sequelize.define('posicoes', {
 
   id_veiculo: {
     type: db.Sequelize.INTEGER
