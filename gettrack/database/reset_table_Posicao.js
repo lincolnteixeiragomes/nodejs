@@ -100,4 +100,4 @@ const Posicao = db.sequelize.define('posicao', {
   }
 })
 
-module.exports = Posicao;
+Posicao.sync({force: true})
