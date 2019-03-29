@@ -7,99 +7,99 @@ const sequelize = new Sequelize('gettrack','app','app',{
 const Posicao = sequelize.define('posicao', {
 
   id_veiculo: {
-    type: sequelize.INTEGER
+    type: Sequelize.INTEGER
   },
   id_rastreador: {
-    type: sequelize.INTEGER
+    type: Sequelize.INTEGER
   },
   data_hora: {
-    type: sequelize.DATE
+    type: Sequelize.DATE
   },
   data_hora_gravacao: {
-    type: sequelize.DATE
+    type: Sequelize.DATE
   },
   latitude: {
-    type: sequelize.DOUBLE
+    type: Sequelize.DOUBLE
   },
   longitude: {
-    type: sequelize.DOUBLE
+    type: Sequelize.DOUBLE
   },
   velocidade: {
-    type: sequelize.INTEGER
+    type: Sequelize.INTEGER
   },
   direcao: {
-    type: sequelize.FLOAT
+    type: Sequelize.FLOAT
   },
   posicao_memoria: {
-    type: sequelize.INTEGER
+    type: Sequelize.INTEGER
   },
   numero_satelites: {
-    type: sequelize.INTEGER
+    type: Sequelize.INTEGER
   },
   qualidade_gsm: {
-    type: sequelize.INTEGER
+    type: Sequelize.INTEGER
   },
   qualidade_gprs: {
-    type: sequelize.INTEGER
+    type: Sequelize.INTEGER
   },
   panico: {
-    type: sequelize.INTEGER
+    type: Sequelize.INTEGER
   },
   ignicao: {
-    type: sequelize.INTEGER
+    type: Sequelize.INTEGER
   },
   entradas: {
-    type: sequelize.INTEGER
+    type: Sequelize.INTEGER
   },
   saidas: {
-    type: sequelize.INTEGER
+    type: Sequelize.INTEGER
   },
   horimetro: {
-    type: sequelize.INTEGER
+    type: Sequelize.INTEGER
   },
   odometro: {
-    type: sequelize.INTEGER
+    type: Sequelize.INTEGER
   },
   observacao: {
-    type: sequelize.STRING
+    type: Sequelize.STRING
   },
   logradouro: {
-    type: sequelize.STRING
+    type: Sequelize.STRING
   },
   ip_gateway: {
-    type: sequelize.STRING
+    type: Sequelize.STRING
   },
   ip_uploader: {
-    type: sequelize.STRING
+    type: Sequelize.STRING
   },
   motivo: {
-    type: sequelize.INTEGER
+    type: Sequelize.INTEGER
   },
   contador: {
-    type: sequelize.INTEGER
+    type: Sequelize.INTEGER
   },
   telemetria: {
-    type: sequelize.TEXT
+    type: Sequelize.TEXT
   },
   tensao: {
-    type: sequelize.FLOAT
+    type: Sequelize.FLOAT
   },
   id_telemetria: {
-    type: sequelize.INTEGER
+    type: Sequelize.INTEGER
   },
   ponto_referencia: {
-    type: sequelize.STRING
+    type: Sequelize.STRING
   },
   id_motorista: {
-    type: sequelize.INTEGER
+    type: Sequelize.INTEGER
   },
   id_colaborador: {
-    type: sequelize.INTEGER
+    type: Sequelize.INTEGER
   },
   id_mensagem: {
-    type: sequelize.INTEGER
+    type: Sequelize.INTEGER
   },
   indefinido: {
-    type: sequelize.INTEGER
+    type: Sequelize.INTEGER
   }
 })
