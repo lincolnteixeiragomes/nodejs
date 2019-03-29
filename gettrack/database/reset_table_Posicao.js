@@ -98,6 +98,10 @@ const Posicao = db.sequelize.define('posicao', {
   indefinido: {
     type: db.Sequelize.INTEGER
   }
+},{
+  underscored: true,
+  freezeTableName: true,
+  tableName: 'posicao'
 })
 
 Posicao.sync({force: true})

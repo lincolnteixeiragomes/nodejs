@@ -1,6 +1,6 @@
 const db = require('./db')
 
-const Posicao = db.sequelize.define('posicoes', {
+const Posicao = db.sequelize.define('posicao', {
 
   id_veiculo: {
     type: db.Sequelize.INTEGER
@@ -98,6 +98,10 @@ const Posicao = db.sequelize.define('posicoes', {
   indefinido: {
     type: db.Sequelize.INTEGER
   }
+},{
+  underscored: true,
+  freezeTableName: true,
+  tableName: 'posicao'  
 })
 
 module.exports = Posicao;
