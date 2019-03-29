@@ -31,7 +31,7 @@ app.get("/:data", function(req, res){
 	var ignition = io.substring(0,1);
 	var input = io.substring(1,4);
 	var output = io.substring(4,6);
-  var date_time = date time;
+  var date_time = date.concat(" " + time);
 
     // Posicao.create({
     //
