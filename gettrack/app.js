@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const Posicao = require("./database/Posicao");
 
 app.get("/:data", function(req, res){
 
@@ -29,8 +30,14 @@ app.get("/:data", function(req, res){
     var msg_type = arrayData[19];
 	var ignition = io.substring(0,1);
 	var input = io.substring(1,4);
-	var output= io.substring(4,6);
+	var output = io.substring(4,6);
+  var date_time = date time;
 
+    // Posicao.create({
+    //
+    //   id_rastreador: dev_id,
+    //   data_hora:
+    // })
     res.send(
 		"Param 1 - hdr: " + hdr + "<br>" +
 		"Param 2 - dev_id: " + dev_id + "<br>" +
@@ -55,6 +62,7 @@ app.get("/:data", function(req, res){
 		"Param21 - : ignition: " + ignition  + "<br>" +
 		"Param22 - : input: " + input + "<br>" +
 		"Param23 - : output: " + output  + "<br>"
+    "Param23 - : Data e Hora: " + date_time  + "<br>"
     );
 
   }else{
