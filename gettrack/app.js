@@ -61,7 +61,7 @@ app.get("/:data", function(req, res){
 		"Param20 - : msg_type: " + msg_type  + "<br>" +
 		"Param21 - : ignition: " + ignition  + "<br>" +
 		"Param22 - : input: " + input + "<br>" +
-		"Param23 - : output: " + output  + "<br>"
+		"Param23 - : output: " + output  + "<br>" +
     "Param23 - : Data e Hora: " + date_time  + "<br>"
     );
 
