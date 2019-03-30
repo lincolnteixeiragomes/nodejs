@@ -1,4 +1,9 @@
 const Posicao = require("./database/Posicao");
+var net = require('net');
+
+//configuração
+var HOST = '192.168.0.16';
+var PORT = 6969;
 
 net.createServer(function(sock) {
 
