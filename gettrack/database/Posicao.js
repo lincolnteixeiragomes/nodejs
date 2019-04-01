@@ -97,11 +97,23 @@ const Posicao = db.sequelize.define('posicao', {
   },
   indefinido: {
     type: db.Sequelize.INTEGER
+  },
+  gps: {
+    type: db.Sequelize.INTEGER
+  },
+  distancia: {
+    type: db.Sequelize.STRING
+  },
+  bateria_interna: {
+    type: db.Sequelize.STRING
+  },
+  status: {
+    type: db.Sequelize.INTEGER
   }
 },{
   underscored: true,
   freezeTableName: true,
-  tableName: 'posicao'  
+  tableName: 'posicao'
 })
 
 module.exports = Posicao;

@@ -51,7 +51,12 @@ net.createServer(function(sock) {
           numero_satelites: satt,
           ignicao: ignition,
           entradas: input,
-          tensao: pwr_volt
+          tensao: pwr_volt,
+          horimetro: h_meter,
+          gps: fix,
+          distancia: dist,
+          bateria_interna: bck_volt,
+          status: mode
 
         })
     }
